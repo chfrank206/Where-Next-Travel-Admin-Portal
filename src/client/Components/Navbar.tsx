@@ -15,10 +15,8 @@ const Navbar: React.SFC<NavbarProps> = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
-                        <Link className="nav-item nav-link" to='/travelform'>Plan Your Trip</Link>
                         <Link className="nav-item nav-link" to='/blogs'>Blog</Link>
-                        <Link className="nav-item nav-link" to='/login'>About Me</Link>
-                        <Link className="nav-item nav-link" to='/register'>Instagram</Link>
+                        <Link className="nav-item nav-link" to='/'>Login</Link>
                     </div>
                 </div>
             </nav>
