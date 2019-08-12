@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { IBlogsProps } from "./Blogs"
 import moment from 'moment';
+import { Link } from 'react-router-dom';
 
 
 export interface IBlogCardProps { blogs: IBlogsProps[] }
@@ -15,7 +16,7 @@ const SeshCard: React.SFC<IBlogCardProps> = props => {
                         <div className="card-body">
                             <p className="card-text">Blog Details: {blog.content}</p>
                             <p>Created: {moment(blog._created).format('MMMM Do, YYYY')}</p>
-                            {/* <Link className="btn btn-success my-2" to={`/blog/${blog.id}`}>View Full Blog</Link> */}
+                            <Link className="btn btn-success my-2" to={`/blog/${blog.id}`}>Edit</Link>
                         </div>
                     </div>
                 ))}

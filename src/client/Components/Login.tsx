@@ -39,10 +39,13 @@ const Login: React.SFC<ILoginProps> = props => {
                         <input className="ml-2" type="password" placeholder="Password" value={password} onChange={(event: React.ChangeEvent<HTMLInputElement>) => setPassword(event.target.value)} />
 
                     </div>
-                    <div className="mt-2">
+                    <div className="mt-2 border border-dark p-2">
                         <p>Are you a poop-butt?</p>
                         <div className="radio">
-                            <label><input type="radio" name="optradio" />Yes</label>
+                            <label><input type="radio" name="optradio" /> Yes</label>
+                        </div>
+                        <div className="radio">
+                            <label><input type="radio" name="optradio" /> Absolutely</label>
                         </div>
                     </div>
                     <div>

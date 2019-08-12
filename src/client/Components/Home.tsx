@@ -9,8 +9,7 @@ const Home: React.SFC<HomeProps> = () => {
         <>
             <section className="row">
                 <article className="col-md-12">
-                    <h1 className="text-center">Add carousel here.</h1>
-                    {/* Katie wants a carousel here. Include controls and captions. */}
+                    <p className="text-center">Hello, my love! I hope you have a wonderful day!</p>
                 </article>
             </section>
         </>

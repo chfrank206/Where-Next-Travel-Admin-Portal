@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Login from './Components/Login';
 import Blogs from './Components/Blogs';
+import Home from './Components/Home';
 
 
 
@@ -17,8 +18,9 @@ const App: React.SFC<AppProps> = () => {
         <Router>
             <Navbar />
             <Switch>
-                <Route exact path='/' component={Login} />
-                <Route exact path='/blogs' component={Blogs} />
+                <Route exact path='/' component={Home} />
+                <Route exact path='/login' component={Login} />
+                <Route exact path='/blog/:id' component={Blogs} />
             </Switch>
         </Router>
     );
