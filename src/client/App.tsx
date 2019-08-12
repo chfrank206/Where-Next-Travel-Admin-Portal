@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar';
 import Login from './Components/Login';
 import Blogs from './Components/Blogs';
 import Home from './Components/Home';
+import Admin from './Components/Admin';
 
 
 
@@ -20,7 +21,8 @@ const App: React.SFC<AppProps> = () => {
             <Switch>
                 <Route exact path='/' component={Home} />
                 <Route exact path='/login' component={Login} />
-                <Route exact path='/blog/:id' component={Blogs} />
+                <Route exact path='/blog' component={Blogs} />
+                <Route exact path='/admin/:id' component={Admin} />
             </Switch>
         </Router>
     );
