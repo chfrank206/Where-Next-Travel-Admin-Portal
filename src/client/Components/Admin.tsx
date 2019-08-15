@@ -41,7 +41,7 @@ const Admin: React.SFC<IAdminBlogProps> = props => {
             content
         }
         try {
-            await json(`/api/blogs/${id}`, 'PUT', body)
+            await json(`/api/blog/${id}`, 'PUT', body)
             props.history.push('/');
         } catch (error) {
             console.log(error)
