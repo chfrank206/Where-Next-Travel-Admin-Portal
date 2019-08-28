@@ -16,7 +16,7 @@ const Navbar: React.SFC<NavbarProps> = () => {
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
                         <Link className="nav-item nav-link" to='/blogs'>Blog</Link>
-                        <Link className="nav-item nav-link" to='/'>Login</Link>
+                        <Link className="nav-item nav-link" to='/login'>Login</Link>
                     </div>
                 </div>
             </nav>

@@ -21,7 +21,7 @@ const App: React.SFC<AppProps> = () => {
             <Switch>
                 <Route exact path='/' component={Home} />
                 <Route exact path='/login' component={Login} />
-                <Route exact path='/blog' component={Blogs} />
+                <Route exact path='/blogs' component={Blogs} />
                 <Route exact path='/admin/:id' component={Admin} />
             </Switch>
         </Router>
